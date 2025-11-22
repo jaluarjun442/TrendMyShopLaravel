@@ -1,8 +1,17 @@
-21-09-2025 start - pendind
-ALTER TABLE `settings` ADD `default_customer_id` INT(10) NULL DEFAULT NULL AFTER `customer_prefix`;
-ALTER TABLE `invoice` ADD `due_date` DATE NULL AFTER `invoice_date`;
-===
-ALTER TABLE `invoice` CHANGE `invoice_datetime` `invoice_date` DATE NULL DEFAULT NULL COMMENT 'Invoice Date & Time';
-===
-ALTER TABLE `invoice` CHANGE `payment_type` `payment_method` VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Cash' COMMENT 'Cash,Online,Cheque,Other';
 
+ssh mojhub.info@ssh.gb.stackcp.com
+
+https://trendmyshop.rocklity.shop/api/v1/categories
+
+Home (Trending)
+GET /api/v1/products/trending → show cards horizontally / grid.
+
+Category list screen
+GET /api/v1/categories
+
+Products list screen
+GET /api/v1/products?category_id=3
+
+Product detail screen
+GET /api/v1/products/15
+Use aff_link field for “Buy Now” → open in browser (Linking.openURL(aff_link) in RN).
