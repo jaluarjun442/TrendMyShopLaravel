@@ -45,7 +45,6 @@ class ProductController extends Controller
             ],
         ]);
     }
-
     // GET /api/products/trending
     public function trending()
     {
@@ -53,14 +52,19 @@ class ProductController extends Controller
             ->where('status', 1)
             ->where('is_trend', 1)
             ->orderByDesc('id')
-            ->limit(20)
-            ->get();
+            ->paginate(15); // 👈 same size as app PAGE_SIZE
 
         return response()->json([
             'status' => true,
             'data'   => ProductResource::collection($products),
+            'meta'   => [
+                'current_page' => $products->currentPage(),
+                'last_page'    => $products->lastPage(),
+                'total'        => $products->total(),
+            ]
         ]);
     }
+
 
     // GET /api/products/{id}
     public function show($id)
