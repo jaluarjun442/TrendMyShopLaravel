@@ -173,7 +173,41 @@
                         </div>
 
                         <hr>
-
+                        <div class="mb-1 col-md-4">
+                            <label for="app_about_us_link" class="form-label">app_about_us_link</label>
+                            <input value="{{ old('app_about_us_link',$setting->app_about_us_link) }}" type="text" class="form-control" id="app_about_us_link" name="app_about_us_link" placeholder="app_about_us_link">
+                            <span class="error text-danger"> {{ $errors->first('app_about_us_link') }}</span>
+                        </div>
+                        <div class="mb-1 col-md-4">
+                            <label for="app_privacy_policy_link" class="form-label">app_privacy_policy_link</label>
+                            <input value="{{ old('app_privacy_policy_link',$setting->app_privacy_policy_link) }}" type="text" class="form-control" id="app_privacy_policy_link" name="app_privacy_policy_link" placeholder="app_privacy_policy_link">
+                            <span class="error text-danger"> {{ $errors->first('app_privacy_policy_link') }}</span>
+                        </div>
+                        <div class="mb-1 col-md-4">
+                            <label for="app_terms_conditions_link" class="form-label">app_terms_conditions_link</label>
+                            <input value="{{ old('app_terms_conditions_link',$setting->app_terms_conditions_link) }}" type="text" class="form-control" id="app_terms_conditions_link" name="app_terms_conditions_link" placeholder="app_terms_conditions_link">
+                            <span class="error text-danger"> {{ $errors->first('app_terms_conditions_link') }}</span>
+                        </div>
+                        <div class="mb-1 col-md-4">
+                            <label for="app_refund_policy_link" class="form-label">app_refund_policy_link</label>
+                            <input value="{{ old('app_refund_policy_link',$setting->app_refund_policy_link) }}" type="text" class="form-control" id="app_refund_policy_link" name="app_refund_policy_link" placeholder="app_refund_policy_link">
+                            <span class="error text-danger"> {{ $errors->first('app_refund_policy_link') }}</span>
+                        </div>
+                        <div class="mb-1 col-md-4">
+                            <label for="app_help_center_link" class="form-label">app_help_center_link</label>
+                            <input value="{{ old('app_help_center_link',$setting->app_help_center_link) }}" type="text" class="form-control" id="app_help_center_link" name="app_help_center_link" placeholder="app_help_center_link">
+                            <span class="error text-danger"> {{ $errors->first('app_help_center_link') }}</span>
+                        </div>
+                        <div class="mb-1 col-md-4">
+                            <label for="app_contact_us_link" class="form-label">app_contact_us_link</label>
+                            <input value="{{ old('app_contact_us_link',$setting->app_contact_us_link) }}" type="text" class="form-control" id="app_contact_us_link" name="app_contact_us_link" placeholder="app_contact_us_link">
+                            <span class="error text-danger"> {{ $errors->first('app_contact_us_link') }}</span>
+                        </div>
+                        <div class="mb-1 col-md-4">
+                            <label for="app_play_store_link" class="form-label">app_play_store_link</label>
+                            <input value="{{ old('app_play_store_link',$setting->app_play_store_link) }}" type="text" class="form-control" id="app_play_store_link" name="app_play_store_link" placeholder="app_play_store_link">
+                            <span class="error text-danger"> {{ $errors->first('app_play_store_link') }}</span>
+                        </div>
                     </div>
                     <hr>
                     <button type="submit" class="btn btn-primary">Save</button>

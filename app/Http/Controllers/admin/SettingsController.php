@@ -44,8 +44,13 @@ class SettingsController extends Controller
             'city' => $request->city,
             'state' => $request->state,
             'pincode' => $request->pincode,
-            'gst' => $request->gst,
-            'pan' => $request->pan,
+            'app_about_us_link' => $request->app_about_us_link,
+            'app_privacy_policy_link' => $request->app_privacy_policy_link,
+            'app_terms_conditions_link' => $request->app_terms_conditions_link,
+            'app_refund_policy_link' => $request->app_refund_policy_link,
+            'app_help_center_link' => $request->app_help_center_link,
+            'app_contact_us_link' => $request->app_contact_us_link,
+            'app_play_store_link' => $request->app_play_store_link,
         ];
         if ($request->hasFile('logo')) {
             $logo = $request->file('logo');
