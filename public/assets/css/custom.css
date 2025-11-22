@@ -1,0 +1,67 @@
+.table>:not(caption)>*>* {
+    padding: .25rem .25rem !important;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:before {
+    font-size: 1rem !important;
+    top: 0px !important;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    font-size: 1rem !important;
+    top: 0px !important;
+}
+
+td {
+    vertical-align: middle !important;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.card-body-breadcums {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0px 20px 0px 20px;
+    color: var(--ct-card-color);
+}
+
+.dataTables_wrapper .dataTables_paginate .pagination {
+    flex-wrap: wrap !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    display: inline-block !important;
+    min-width: 30px;
+}
+.card-body-dashboard{
+    padding: 0.75rem 0.75rem !important;
+}
+@media (max-width: 991.98px) {
+    .form-control {
+        padding: .05rem .09rem !important;
+    }
+    .total_field_non_desktop{
+        min-width: 50px !important;
+    }
+    .price_field_non_desktop{
+        min-width: 40px !important;
+    }
+}
